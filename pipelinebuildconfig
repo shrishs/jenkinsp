@@ -1,14 +1,13 @@
 kind: "BuildConfig"
 apiVersion: "v1"
 metadata:
-  name: "sample-pipeline"
+  name: "kitchensink-managed-ds-pipeline"
 spec:
   source:
     type: "Git"
     git:
-      uri: "http://172.30.94.242/root/javaproject"
-    contextDir: kitchensink-managed-ds
+      uri: "https://github.com/shrishs/jenkinsp.git"
   strategy:
     type: "JenkinsPipeline"
     jenkinsPipelineStrategy:
-      jenkinsfilePath: http://172.30.94.242/root/jenkinsp.git
+      jenkinsfilePath: Jenkinsfile
