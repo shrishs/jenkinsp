@@ -1,4 +1,4 @@
-node('javap') 
+node('maven') 
 {
 stage 'build'
 openshiftBuild(buildConfig: 'javaproject', showBuildLogs: 'true')
