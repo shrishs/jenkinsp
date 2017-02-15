@@ -1,5 +1,5 @@
 node('maven') 
 {
 stage 'build'
-openshiftBuild(namespace: 'development',buildConfig: 'javaproject', showBuildLogs: 'true')
+openshiftBuild(namespace: 'development',buildConfig: 'openshift-quickstarts', showBuildLogs: 'true')
 }
